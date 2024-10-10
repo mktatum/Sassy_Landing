@@ -1,3 +1,5 @@
+@import "btnConfig";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +9,7 @@
   body {
     background-color: $light-color;
     font-family: $font-stack;
+    color: white;
     line-height: 1;
   }
   
@@ -27,6 +30,32 @@
     // 1. $variables
     // 2. nesting (dont forget about the ampersand (&) parent selector!)
     // 3. At-Rules
+    background-color: black;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        a {
+          color: white;
+        }
+      }
+    }
+    .hero-content {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      img {
+        width: 100%;
+
+      }
+    }
+
   }
   
   // This code is related to some of the aspects of SCSS we have yet to cover.
